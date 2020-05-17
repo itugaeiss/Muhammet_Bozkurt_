@@ -1,0 +1,11 @@
+<launch>
+
+    <node name="serial_arduino" pkg="rosserial_python" type="serial_node.py" output="screen">
+        <param name="port" value="/dev/ttyUSB0" />
+        <param name="baud" value="57600" />
+    </node>
+
+    <node name="odom_handler" pkg="odom_handler" type="odom_handler_from_odom.py" />
+
+    
+</launch>
