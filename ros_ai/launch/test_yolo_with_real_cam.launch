@@ -1,0 +1,8 @@
+<launch>
+
+
+  <node pkg="ros_ai" type="detector.py" name="detector"/>
+  <node pkg="ros_ai" type="camera_test.py" name="i_see_you"/>
+  <node pkg="rqt_image_view" type="rqt_image_view" name="rqt_image_view"/>
+
+</launch>
